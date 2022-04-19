@@ -21,8 +21,6 @@ function fase1() {
                 gameOver()
                 break
             }
-
-
         } else if (option == 2) {
 
             alert('Você ataca o Mago com seu Nunchako e ele cai no chão')
@@ -33,8 +31,6 @@ function fase1() {
                 gameOver()
                 break
             }
-
-
         } else if (option == 3) {
 
             alert('Sua chuva de granizo deu certo e o Mago da Floresta não foi páreo para ela.');
