@@ -2,19 +2,6 @@ function gameOver() {
     location.assign("game-over-marceline.html")
 }
 
-function tentarNovamente() {
-    location.assign('fase1.html')
-}
-
-function validaResposta(resposta, respostaCerta, proximaFase) {
-    if (resposta === respostaCerta) {
-        alert('Sua chuva de granizo deu certo e o Mago da Floresta não foi páreo para ela.')
-        window.location.href = `${proximaFase}`
-    } else if (resposta = 1) {
-
-    }
-}
-
 function voltarAoInicio(){
     location.assign('../../personagens/personagem.html')
 }
@@ -25,27 +12,25 @@ function fase1() {
     while (true) {
         var option = (prompt("Digite o número da sua resposta"));
 
-        if (option == 1) {
-            alert('Você conseguiu desviar, mas quando deu às costas para o Mago da Folha, ele lançou um feitiço de cipó para te amarrar e a cor verde foi a ultima coisa que você viu...');
-            alert('Você não tem vidas ilimitadas, não as disperdice Rei Gelado!')
+        if (option == 3) {
+            alert('A ideia parece ótima, mas esses seres não estão num show se divertindo. Na verdade eles estão aqui a tanto tempo esperando, tão entediados que você é sugada pela vibe apática deles e não consegue nem se mexer pra sair dali...');
+            alert('Você perdeu uma vida')
             contador++
             if (contador >= 2) {
                 gameOver()
                 break
             }
         } else if (option == 2) {
-
-            alert('Você ataca o Mago com seu Nunchako e ele cai no chão')
-            alert('Você ganhou esta batalha, mas se esqueceu que não pode usar nenhuma arma. O Mestre dos Magos vê você trapaceando e te transforma em um gatinho')
-            alert('Você não tem vidas ilimitadas, não as disperdice Rei Gelado!')
+            alert('Você começa a voar e dá de cara com uma nuvem de sangue cheia de ódio que te ataca com um raio.')
+            alert('Você perdeu uma vida')
             contador++
             if (contador >= 2) {
                 gameOver()
                 break
             }
-        } else if (option == 3) {
+        } else if (option == 1) {
 
-            alert('Sua chuva de granizo deu certo e o Mago da Floresta não foi páreo para ela.');
+            alert('O barqueiro te reconhece como a filha do chefe. Ele não sabe que seu pai sequestrou seus amigos, então ele concorda em te atravessar pelo mar do tédio');
             location.assign('fase2.html')
             break;
 
@@ -61,19 +46,8 @@ function fase2() {
         var option = (prompt("Digite o número da sua resposta"));
 
         if (option == 1) {
-            alert('Sua visão e alma ficam aliviadas com a falta de nudez explicita. Porém enquanto você está com os olhos fechados, você tropeça no Mago Rocha e bate a cabeça.');
-            alert('Não acredito que o Mago Pelado foi o motivo de você perder um beijo da Jujuba :|')
-            contador++
-            if (contador >= 2) {
-                gameOver()
-                break
-            }
-
-
-        } else if (option == 3) {
-
-            alert('Isso faz com que o Mago Pelado tropece e caia com o bumbum na sua cara. A vergonha é tão grande que você desiste da luta e só quer ir pra casa chorar sozinho.')
-            alert('Não acredito que o Mago Pelado foi o motivo de você perder um beijo da Jujuba :|')
+            alert('O guarda não acredita em você e chama o seu pai enquanto você está distraída');
+            alert('Agora você ta presa pra sempre com ele...')
             contador++
             if (contador >= 2) {
                 gameOver()
@@ -83,7 +57,17 @@ function fase2() {
 
         } else if (option == 2) {
 
-            alert('O vento extremamente gelado faz o Mago Pelado cair congelado. Você sobrevive a mais uma bizarrice dessa batalha.');
+            alert('Ele simplesmente diz não :|')
+            contador++
+            if (contador >= 2) {
+                gameOver()
+                break
+            }
+
+
+        } else if (option == 3) {
+
+            alert('Boa! Você se transforma num monstro gigante e peludo e esmaga ele');
             location.assign('fase3.html')
             break;
 
@@ -99,18 +83,8 @@ function fase3() {
         var option = (prompt("Digite o número da sua resposta"));
 
         if (option == 1) {
-            alert('Você tem sorte que o Mestre dos Magos está ocupado com seus gatinhos e não vê você trapaceando. Mas não contava com a habilidade do Abracadaniel que lança um feitiço maluco e transforma a sua arma em borboleta. Ela se transforma de novo em arma. O Nunchako cai na sua cabeça e você desmaia, seu bobão!');
-            alert('Você não tem vidas ilimitadas, não as disperdice Rei Gelado!')
-            contador++
-            if (contador >= 2) {
-                gameOver()
-                break
-            }
-        } else if (option == 2) {
-
-            alert('A bola vai em direção ao Mago... Ele grita: ARCO-IRIS ABRACADANIEL!.')
-            alert('A sua bola de neve começa a subir no arco-iris que acaba na sua cabeça ._. No meio do caminho o Mago transmuta ela de neve para pedra.')
-            alert('POW! ... Você está fora de combate')
+            alert('O Rei Abadear percebe seu movimento e consegue tirar o machado da sua mão. Ele ri e quebra o baixo-machado');
+            alert('Ele era uma das coisas que você mais amava e agora seu coração está partido :c você até se esquece do Jake e do Finn')
             contador++
             if (contador >= 2) {
                 gameOver()
@@ -118,8 +92,16 @@ function fase3() {
             }
         } else if (option == 3) {
 
-            alert('Você é um vilão esperto e acertou o ponto fraco do Abracadaniel: Ele tem uma péssima auto-estima. Agora ele ta num canto chorando');
-            alert('Você VENCEU a batalha dos magos e seu prêmio te espera')
+            alert('Isso definitivamente não deu certo. O que você pensou que ia acontecer? ')
+            contador++
+            if (contador >= 2) {
+                gameOver()
+                break
+            }
+        } else if (option == 2) {
+
+            alert('Você agarra o amuleto que ele carrega no pescoço. Hunson tira a maioria dos seu poderes de um amuleto que ele carrega consigo, que enche a seu portador um mal caótico e poderes sobrenaturais.');
+            alert('Com isso ele fica sem poderes e bem mais fraco. O que da tempo de vocês conversarem civilizadamente.')
             location.assign('you-win.html')
             break;
 

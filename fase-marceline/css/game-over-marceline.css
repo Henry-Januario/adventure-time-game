@@ -1,13 +1,13 @@
 body{
-    background-image: url(../imagens/landscape.jpg);
+    background-image: url(../imagens/noito.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 #box{
-    background-color: rgba(0, 0, 255, 0.575);
+    background-color: rgba(255, 81, 0, 0.575);
     color: rgb(255, 255, 255);
     font-size: 20px;
     width: 600px;
@@ -18,7 +18,7 @@ body{
 }
 
 #botao{
-    background-color: rgb(232, 0, 240);
+    background-color: rgb(240, 0, 0);
     color: white;
     border-radius: 30px;
     font-size: 20px;
@@ -27,6 +27,6 @@ body{
 
 #botao:hover{
     cursor: pointer;
-    background-color: rgb(0, 195, 255);
-    color:white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 0, 0);
 }
