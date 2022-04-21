@@ -1,15 +1,27 @@
-function gameOver (){
+function gameOver() {
     location.assign("game-over-gelado.html")
 }
 
-function tentarNovamente(){
+function tentarNovamente() {
     location.assign('fase1.html')
 }
 
+function validaResposta(resposta, respostaCerta, proximaFase) {
+    if (resposta === respostaCerta) {
+        alert('Sua chuva de granizo deu certo e o Mago da Floresta não foi páreo para ela.')
+        window.location.href = `${proximaFase}`
+    } else if (resposta = 1) {
+
+    }
+}
+
+function voltarAoInicio(){
+    location.assign('../../personagens/personagem.html')
+}
 
 var contador = 0;
 function fase1() {
-    
+
     while (true) {
         var option = (prompt("Digite o número da sua resposta"));
 
@@ -44,7 +56,7 @@ function fase1() {
 }
 
 function fase2() {
-    
+
     while (true) {
         var option = (prompt("Digite o número da sua resposta"));
 
@@ -73,6 +85,42 @@ function fase2() {
 
             alert('O vento extremamente gelado faz o Mago Pelado cair congelado. Você sobrevive a mais uma bizarrice dessa batalha.');
             location.assign('fase3.html')
+            break;
+
+        } else {
+            alert("Digite apenas 1, 2 ou 3")
+        }
+    }
+}
+
+function fase3() {
+
+    while (true) {
+        var option = (prompt("Digite o número da sua resposta"));
+
+        if (option == 1) {
+            alert('Você tem sorte que o Mestre dos Magos está ocupado com seus gatinhos e não vê você trapaceando. Mas não contava com a habilidade do Abracadaniel que lança um feitiço maluco e transforma a sua arma em borboleta. Ela se transforma de novo em arma. O Nunchako cai na sua cabeça e você desmaia, seu bobão!');
+            alert('Você não tem vidas ilimitadas, não as disperdice Rei Gelado!')
+            contador++
+            if (contador >= 2) {
+                gameOver()
+                break
+            }
+        } else if (option == 2) {
+
+            alert('A bola vai em direção ao Mago... Ele grita: ARCO-IRIS ABRACADANIEL!.')
+            alert('A sua bola de neve começa a subir no arco-iris que acaba na sua cabeça ._. No meio do caminho o Mago transmuta ela de neve para pedra.')
+            alert('POW! ... Você está fora de combate')
+            contador++
+            if (contador >= 2) {
+                gameOver()
+                break
+            }
+        } else if (option == 3) {
+
+            alert('Você é um vilão esperto e acertou o ponto fraco do Abracadaniel: Ele tem uma péssima auto-estima. Agora ele ta num canto chorando');
+            alert('Você VENCEU a batalha dos magos e seu prêmio te espera')
+            location.assign('you-win.html')
             break;
 
         } else {

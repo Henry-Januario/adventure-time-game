@@ -1,5 +1,5 @@
 body{
-    background-image: url(../imagens/Campo_da_Batalha_dos_Magos.webp);
+    background-image: url(../imagens/nigt.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,3 +29,6 @@ p{
     text-align: center;
 }
 
+#botao:hover{
+    cursor: pointer;
+}
