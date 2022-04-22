@@ -1,0 +1,32 @@
+body{
+    background-image: url(../imagens/noito.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#box{
+    background-color: rgba(255, 81, 0, 0.575);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 600px;
+    display: inline-block;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px 5px rgba(0,0,0,0.61);
+}
+
+#botao{
+    background-color: rgb(240, 0, 0);
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#botao:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 0, 0);
+}
