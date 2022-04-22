@@ -2,7 +2,7 @@ function gameOver() {
     location.assign("game-over-marceline.html")
 }
 
-function voltarAoInicio(){
+function voltarAoInicio() {
     location.assign('../../personagens/personagem.html')
 }
 

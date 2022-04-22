@@ -15,7 +15,7 @@ function validaResposta(resposta, respostaCerta, proximaFase) {
     }
 }
 
-function voltarAoInicio(){
+function voltarAoInicio() {
     location.assign('../../personagens/personagem.html')
 }
 
