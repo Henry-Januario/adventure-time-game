@@ -1,5 +1,5 @@
 function gameOver() {
-    location.assign("game-over-marceline.html")
+    location.assign("game-over-finn.html")
 }
 
 function voltarAoInicio() {
